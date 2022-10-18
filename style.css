@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+  color: var(--color-text-primary);
 }
 
 :root {
-  --color-text-primary: #0e0d0d;
+  --color-text-primary: #172d2e;
   --bg-color-primary: #fd990b;
   --bg-color-secondary: antiquewhite;
   --bg-color-button: #44873e;
@@ -44,7 +45,7 @@ label {
 }
 
 input {
-  border-style: solid;
+  border: solid var(--color-text-primary);
   border-radius: 5px;
   margin-bottom: 25px;
   width: 20%;
@@ -57,10 +58,6 @@ input:hover {
   width: 35%;
 }
 
-input:focus {
-  background-color: var(--bg-color-secondary);
-}
-
 input.content {
   background-color: var(--bg-color-secondary);
   max-width: 600px;
@@ -69,20 +66,41 @@ input.content {
   margin: auto;
 }
 
+#how,
+#message {
+  border: solid var(--color-text-primary);
+  border-radius: 5px;
+}
+
+select#how {
+  height: 25px;
+}
+
+#how:hover {
+  border-color: var(--bg-color-primary);
+}
+
+#message:hover {
+  border-color: var(--bg-color-primary);
+}
+
+textarea {
+  font-family: "Gill Sans";
+}
+
 button[type="submit"] {
   width: 30%;
   background-color: var(--bg-color-button);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  border: solid var(--bg-color-button);
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
 button[type="submit"]:hover {
-  border-style: solid;
   color: var(--bg-color-button);
-  background-color: rgb(231, 239, 232);
+  background-color: var(--bg-color-secondary);
 }
