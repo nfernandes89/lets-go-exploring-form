@@ -68,14 +68,10 @@ input.content {
   margin: auto;
 }
 
-#how,
-#message {
-  border: 2px solid var(--color-primary);
-  border-radius: 5px;
-}
-
 select#how {
   height: 25px;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
 }
 
 #how:hover {
@@ -88,6 +84,8 @@ select#how {
 
 textarea#message {
   font-family: "Raleway", sans-serif;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
 }
 
 button[type="submit"] {
